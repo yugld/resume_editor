@@ -11,7 +11,7 @@
         <main class="resume">
             <div class="resume__item resume__item--profile-image">
                 <img
-                    src="/profileImg.jpg"
+                    src="/public/profileImg.jpg"
                     alt="Profile picture of Karthik SR"
                 />
             </div>
@@ -19,8 +19,18 @@
             <div class="resume__item resume__item--profile-card">
                 <p class="resume__greeting">Hello 👋🏻 I’m</p>
                 <div class="resume__profile-details">
-                    <h1 class="resume__profile-name">Karthik SR</h1>
-                    <p class="resume__profile-role">UX/UI Designer</p>
+                    <h1
+                        class="resume__profile-name editable"
+                        contenteditable="true"
+                    >
+                        Karthik SR
+                    </h1>
+                    <p
+                        class="resume__profile-role editable"
+                        contenteditable="true"
+                    >
+                        UX/UI Designer
+                    </p>
                 </div>
             </div>
 
@@ -28,7 +38,9 @@
                 <h2 class="resume__card-title block_title">Languages</h2>
                 <ul class="resume__languages-list">
                     <li class="resume__language-item">
-                        <span>English</span>
+                        <span class="lng-1 editable" contenteditable="true"
+                            >English</span
+                        >
                         <div class="resume__progress-bar-container">
                             <div
                                 class="resume__progress-bar"
@@ -37,7 +49,9 @@
                         </div>
                     </li>
                     <li class="resume__language-item">
-                        <span>Malayalam</span>
+                        <span class="lng-2 editable" contenteditable="true"
+                            >Malayalam</span
+                        >
                         <div class="resume__progress-bar-container">
                             <div
                                 class="resume__progress-bar"
@@ -46,7 +60,9 @@
                         </div>
                     </li>
                     <li class="resume__language-item">
-                        <span>Hindi</span>
+                        <span class="lng-3 editable" contenteditable="true"
+                            >Hindi</span
+                        >
                         <div class="resume__progress-bar-container">
                             <div
                                 class="resume__progress-bar"
@@ -55,8 +71,9 @@
                         </div>
                     </li>
                 </ul>
+
+                </div>
             </div>
-        </div>
         </main>
         <script type="module" src="./js/main.js"></script>
     </body>
