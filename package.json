@@ -4,11 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "eslint": "^9.32.0",
+    "eslint-define-config": "^2.1.0",
+    "prettier": "^3.6.2",
     "vite": "^5.2.0"
   }
 }
