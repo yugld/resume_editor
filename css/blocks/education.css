@@ -1,0 +1,81 @@
+.resume__item--education-card {
+    max-width: 268px;
+    max-height: 289px;
+    padding: 12px;
+    background-color: var(--bg-neutral);
+}
+
+.resume__education-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.resume__education-item {
+    max-width: 114px;
+    max-height: 120px;
+    background-color: var(--bg-primary);
+    border-radius: var(--border-radius-small);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 1.5;
+}
+
+.resume__education-item--highlight {
+    background-color: var(--bg-accent);
+    color: var(--text-color-light);
+}
+
+.resume__education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume__education-year {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.resume__education-year--dark {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--text-color-dark);
+}
+
+.resume__education-title {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.resume__education-title--dark {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--text-color-dark);
+}
+
+.resume__education-tags,
+.resume__education-tags-green {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 4px;
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.resume__education-tags {
+    color: #ebf9f2;
+}
+
+.resume__education-tags-green {
+    color: var(--text-color-accent);
+}
+
+.resume__education-school {
+    font-size: 8px;
+    font-weight: 400;
+    margin-top: auto;
+}

@@ -1,0 +1,32 @@
+.resume__item--profile-card {
+    flex-basis: 124px;
+    height: 124px;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: var(--bg-neutral);
+}
+
+.resume__greeting {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.resume__profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.resume__profile-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.04;
+}
+
+.resume__profile-role {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-color-secondary);
+}

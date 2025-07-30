@@ -1,0 +1,75 @@
+.resume__item--experience-card {
+    max-width: 411px;
+    max-height: 359px;
+    padding: 12px;
+    background-color: var(--bg-neutral);
+}
+
+.resume__experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resume__job-card {
+    padding: 8px;
+    border-radius: var(--border-radius-small);
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 387px;
+}
+
+.resume__job-card--highlight {
+    background-color: var(--bg-accent);
+    color: var(--text-color-light);
+}
+.resume__job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume__job-date {
+    font-size: 8px;
+    font-weight: 500;
+}
+
+.resume__job-tag--recent {
+    background-color: rgba(126, 115, 18, 0.4);
+    color: #ddf163;
+    font-size: 8px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: var(--border-radius-tag);
+}
+
+.resume__job-body {
+    display: flex;
+    gap: 8px;
+}
+
+.resume__job-info {
+    max-width: 124px;
+    flex-shrink: 0;
+}
+
+.resume__job-title {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.resume__job-company {
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.resume__job-duties {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
