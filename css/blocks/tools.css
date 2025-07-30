@@ -1,7 +1,7 @@
 .resume__item--tools-card {
     flex-basis: 124px;
     max-height: 359px;
-    padding: 12px 12px 2px 12px;
+    padding: 12px;
     background-color: var(--bg-neutral);
 }
 
@@ -10,7 +10,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 11px;
+    max-height: 308px;
 }
 
 .resume__tool-group {
@@ -30,6 +31,11 @@
     left: 50%;
     transform: translate(-50%);
     white-space: nowrap;
+    line-height: 142%;
+}
+
+.resume__tool-icons-add {
+    width: 15px;
 }
 
 .resume__tool-icons-box {
@@ -45,6 +51,6 @@
 }
 
 .resume__tool-icons-box img {
-    max-height: 20px;
+    max-height: 19px;
     width: auto;
 }

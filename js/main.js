@@ -6,7 +6,7 @@ function restoreContentByClass(elem) {
     const className = elem.className;
     const data = localStorage.getItem("resume_" + className);
     if (data !== null) {
-        elem.innerText = data;
+        elem.innerHtml = data;
     }
 }
 

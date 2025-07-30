@@ -9,7 +9,6 @@
 .resume__interests-card {
     max-width: 267px;
     max-height: 289px;
-    gap: 20px;
     padding: 12px;
     background-color: var(--bg-neutral);
 }
@@ -21,7 +20,8 @@
 .resume__interests-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
+    line-height: 1.5;
 }
 
 .resume__interests-tags span {

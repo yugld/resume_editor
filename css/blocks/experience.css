@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    max-width: 387px;
+    width: 387px;
 }
 
 .resume__job-card--highlight {
@@ -41,13 +41,14 @@
     color: #ddf163;
     font-size: 8px;
     font-weight: 500;
-    padding: 2px 8px;
+    padding: 2px 7px;
     border-radius: var(--border-radius-tag);
+    line-height: 155%;
 }
 
 .resume__job-body {
     display: flex;
-    gap: 8px;
+    justify-content: space-between;
 }
 
 .resume__job-info {
@@ -58,18 +59,32 @@
 .resume__job-title {
     font-size: 10px;
     font-weight: 500;
+    line-height: 150%;
 }
 
 .resume__job-company {
     font-size: 8px;
     font-weight: 400;
+    line-height: 150%;
 }
 
 .resume__job-duties {
+    max-width: 239px;
+}
+
+.resume__job-duties-list {
     font-size: 8px;
     font-weight: 400;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: -2px;
+}
+
+.resume__job-duties-list li {
+    margin-left: 12px;
+}
+
+.resume__job-duties-list li::marker {
+    font-size: 0.9em;
 }

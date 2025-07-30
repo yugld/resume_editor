@@ -1,5 +1,5 @@
 .resume__item--profile-card {
-    flex-basis: 124px;
+    width: 124px;
     height: 124px;
     justify-content: space-between;
     padding: 12px;
