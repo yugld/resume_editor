@@ -1,0 +1,29 @@
+.resume__item--interests-contact {
+    max-width: 267px;
+    max-height: 289px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.resume__interests-card {
+    max-width: 267px;
+    max-height: 289px;
+    padding: 12px;
+    background-color: var(--bg-neutral);
+}
+
+.resume__interests-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    line-height: 1.5;
+}
+
+.resume__interests-tags span {
+    background-color: var(--bg-primary);
+    padding: 4px 10px;
+    border-radius: 40px;
+    font-size: 10px;
+    font-weight: 400;
+}

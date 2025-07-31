@@ -1,0 +1,59 @@
+.resume__item--tools-card {
+    flex-basis: 124px;
+    max-height: 359px;
+    padding: 12px;
+    background-color: var(--bg-neutral);
+}
+
+.resume__tools-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    max-height: 308px;
+}
+
+.resume__tool-group {
+    position: relative;
+}
+
+.resume__tool-tag {
+    position: absolute;
+    background-color: var(--bg-dark);
+    color: var(--text-color-light);
+    font-size: 5px;
+    font-weight: 500;
+    padding: 2px 6px;
+    border-radius: var(--border-radius-tag);
+    z-index: 1;
+    top: -5.5px;
+    left: 50%;
+    transform: translate(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+    line-height: 142%;
+}
+
+.resume__tool-icons-add {
+    width: 15px;
+}
+
+.resume__tool-icons-box {
+    background-color: var(--bg-primary);
+    border-radius: 6px;
+    padding: 16px 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 76px;
+}
+
+.resume__tool-icons-box img {
+    max-height: 19px;
+    width: auto;
+}

@@ -1,0 +1,98 @@
+@media (max-width: 594px) {
+    .resume {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 16px;
+    }
+
+    .resume__item--profile-card,
+    .resume__item--languages-card {
+        height: auto;
+    }
+
+    .resume__language-item span {
+        width: 40%;
+    }
+
+    .resume__row {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        width: 100%;
+    }
+    .resume__item--interests-contact {
+        gap: 12px;
+    }
+    .resume__item--tools-card,
+    .resume__progress-bar-container {
+        max-width: none;
+        width: 100%;
+    }
+
+    .resume__item--interests-contact,
+    .resume__item--languages-card,
+    .resume__item--experience-card {
+        max-height: none;
+        height: auto;
+        max-width: none;
+        width: 100%;
+    }
+    .resume__tools-sections {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .resume__tools-item {
+        white-space: nowrap;
+    }
+    .resume__tool-icons-box,
+    .resume__education-item {
+        max-width: none;
+    }
+
+    .resume__item--education-card {
+        max-height: none;
+    }
+    .resume__job-card {
+        width: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .resume {
+        padding: 10px 12px;
+    }
+
+    .resume__card-title {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .resume__item--profile-image {
+        display: none;
+    }
+
+    .resume__job-body {
+        flex-direction: column;
+        gap: 2px;
+    }
+}
+
+@media (max-width: 360px) {
+    .resume__row {
+        flex-direction: column;
+    }
+
+    .resume__item--interests-contact,
+    .resume__item--education-card,
+    .resume__interests-card,
+    .resume__item--profile-card {
+        max-width: none;
+        width: 100%;
+    }
+}

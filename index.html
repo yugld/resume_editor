@@ -1,13 +1,459 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/person.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <title>Resume</title>
+    </head>
+
+    <body>
+        <main class="resume" id="resume">
+            <div class="resume__row">
+                <div class="resume__item resume__item--profile-image">
+                    <img
+                        src="/public/profileImg.jpg"
+                        alt="Profile picture of Karthik SR"
+                    />
+                </div>
+
+                <section class="resume__item resume__item--profile-card">
+                    <p class="resume__greeting editable" contenteditable="true">
+                        Hello 👋🏻 I’m
+                    </p>
+                    <div class="resume__profile-details">
+                        <h1
+                            class="resume__profile-name editable"
+                            contenteditable="true"
+                        >
+                            Karthik SR
+                        </h1>
+                        <p
+                            class="resume__profile-role editable"
+                            contenteditable="true"
+                        >
+                            UX/UI Designer
+                        </p>
+                    </div>
+                </section>
+
+                <section class="resume__item resume__item--languages-card">
+                    <h2 class="resume__card-title">Languages</h2>
+                    <ul class="resume__languages-list">
+                        <li class="resume__language-item">
+                            <span class="lng-1 editable" contenteditable="true"
+                                >English</span
+                            >
+                            <div class="resume__progress-bar-container">
+                                <div
+                                    class="resume__progress-bar"
+                                    style="width: 100%"
+                                ></div>
+                            </div>
+                        </li>
+                        <li class="resume__language-item">
+                            <span class="lng-2 editable" contenteditable="true"
+                                >Malayalam</span
+                            >
+                            <div class="resume__progress-bar-container">
+                                <div
+                                    class="resume__progress-bar"
+                                    style="width: 100%"
+                                ></div>
+                            </div>
+                        </li>
+                        <li class="resume__language-item">
+                            <span class="lng-3 editable" contenteditable="true"
+                                >Hindi</span
+                            >
+                            <div class="resume__progress-bar-container">
+                                <div
+                                    class="resume__progress-bar"
+                                    style="width: 76.78%"
+                                ></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="resume__item resume__item--experience-card">
+                <h2 class="resume__card-title">Experience</h2>
+                <div class="resume__experience-list">
+                    <article
+                        class="resume__job-card resume__job-card--highlight"
+                    >
+                        <div class="resume__job-header">
+                            <span
+                                class="resume__job-date editable"
+                                contenteditable="true"
+                                >Jun. 2023 - Present</span
+                            >
+                            <span
+                                class="resume__job-tag--recent editable"
+                                contenteditable="true"
+                                >most recent</span
+                            >
+                        </div>
+                        <div class="resume__job-body">
+                            <div class="resume__job-info">
+                                <h3
+                                    class="resume__job-title editable"
+                                    contenteditable="true"
+                                >
+                                    Marketing Manager
+                                </h3>
+                                <p
+                                    class="resume__job-company editable"
+                                    contenteditable="true"
+                                >
+                                    Pankayam | Full-time
+                                </p>
+                            </div>
+                            <div class="resume__job-duties">
+                                <ul
+                                    class="resume__job-duties-list editable"
+                                    contenteditable="true"
+                                >
+                                    <li>
+                                        Strategy development and planning of
+                                        campaigns that promote the business and
+                                        generate genuine traffic
+                                    </li>
+                                    <li>
+                                        SEO Content Creation for Blogs, Website,
+                                        Social media
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="resume__job-card">
+                        <div class="resume__job-header">
+                            <span
+                                class="resume__job-date editable"
+                                contenteditable="true"
+                                >2017 - Present</span
+                            >
+                        </div>
+                        <div class="resume__job-body">
+                            <div class="resume__job-info">
+                                <h3
+                                    class="resume__job-title editable"
+                                    contenteditable="true"
+                                >
+                                    Graphic / Web designer
+                                </h3>
+                                <p
+                                    class="resume__job-company editable"
+                                    contenteditable="true"
+                                >
+                                    Freelance
+                                </p>
+                            </div>
+                            <div class="resume__job-duties">
+                                <ul
+                                    class="resume__job-duties-list"
+                                    contenteditable="true"
+                                >
+                                    <li>
+                                        Development of internal projects from
+                                        scratch, product design of brands
+                                    </li>
+                                    <li>
+                                        Landing page, webapps and hybrid apps
+                                    </li>
+                                    <li>
+                                        Coordinating with outside agencies, art
+                                        services, web designer, marketing,
+                                        printers, and colleagues as necessary.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="resume__job-card">
+                        <div class="resume__job-header">
+                            <span
+                                class="resume__job-date editable"
+                                contenteditable="true"
+                                >Sep. 2021 - Jun. 2023</span
+                            >
+                        </div>
+                        <div class="resume__job-body">
+                            <div class="resume__job-info">
+                                <h3
+                                    class="resume__job-title editable"
+                                    contenteditable="true"
+                                >
+                                    Legal Assistant
+                                </h3>
+                                <p
+                                    class="resume__job-company editable"
+                                    contenteditable="true"
+                                >
+                                    Law Firm | Intern
+                                </p>
+                            </div>
+                            <div class="resume__job-duties">
+                                <ul
+                                    class="resume__job-duties-list"
+                                    contenteditable="true"
+                                >
+                                    <li>
+                                        Provide administrative support to lawyer
+                                        and enhance office effectiveness
+                                    </li>
+                                    <li>
+                                        Handle communication with clients,
+                                        witnesses etc.
+                                    </li>
+                                    <li>
+                                        repare case briefs and summarize
+                                        depositions, interrogatories and
+                                        testimony
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="resume__item resume__item--tools-card">
+                <h2 class="resume__card-title">Tools</h2>
+
+                <div class="resume__tools-sections">
+                    <div class="resume__tool-group">
+                        <span
+                            class="resume__tool-tag editable"
+                            contenteditable="true"
+                            >design</span
+                        >
+                        <div class="resume__tool-icons-box">
+                            <img
+                                src="/public/tools/design/logoFigma.svg"
+                                alt="Figma logo"
+                            />
+                            <img
+                                src="/public/tools/design/icon _adobe photoshop_.svg"
+                                alt="Adobe Photoshop icon part 1"
+                            />
+                            <img
+                                src="/public/tools/design/icon _adobe illustrator_.svg"
+                                alt="Adobe Illustrator icon part 2"
+                            />
+                            <img
+                                src="/public/tools/design//icon _adobe premiere_.svg"
+                                alt="Adobe Premiere icon part 2"
+                            />
+                            <img
+                                src="/public/tools/design/logoNotion.svg"
+                                alt="Notion logo"
+                            />
+                            <img
+                                src="/public/tools/design/logoMeet.svg"
+                                alt="Google Meet logo"
+                            />
+                        </div>
+                    </div>
+                    <div class="resume__tool-group">
+                        <span
+                            class="resume__tool-tag editable"
+                            contenteditable="true"
+                            >no-code</span
+                        >
+                        <div class="resume__tool-icons-box">
+                            <img
+                                src="/public/tools/noCode/logoZapìer 1.svg"
+                                alt="Zapier logo"
+                            />
+                            <img
+                                src="/public/tools/noCode/logoWebflow.svg"
+                                alt="Webflow logo"
+                            />
+                            <img
+                                src="/public/tools/noCode/logoFramer.svg"
+                                alt="Framer logo"
+                            />
+                            <img
+                                src="/public/tools/noCode/logoWordpress.svg"
+                                alt="Wordpress logo"
+                            />
+                        </div>
+                    </div>
+                    <div class="resume__tool-group">
+                        <span
+                            class="resume__tool-tag editable"
+                            contenteditable="true"
+                            >artificial intelligence</span
+                        >
+                        <div class="resume__tool-icons-box">
+                            <img
+                                src="/public/tools/ai/logoChatGPT 1.svg"
+                                alt="ChatGPT logo"
+                            />
+                            <img
+                                src="/public/tools/ai/logoCopilot 1.svg"
+                                alt="Copilot logo"
+                            />
+                            <img
+                                src="/public/tools/ai/logoMidjourney 1.svg"
+                                alt="Midjourney logo"
+                            />
+                            <div class="resume__tool-icons-add"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="resume__row">
+                <section class="resume__item resume__item--education-card">
+                    <h2 class="resume__card-title">Education</h2>
+                    <div class="resume__education-list">
+                        <article
+                            class="resume__education-item resume__education-item--highlight"
+                        >
+                            <div class="resume__education-header">
+                                <span
+                                    class="resume__education-year editable"
+                                    contenteditable="true"
+                                    >2023</span
+                                >
+                                <img src="/public/Vector.svg" alt="icon" />
+                            </div>
+
+                            <div class="resume__education--main">
+                                <h3
+                                    class="resume__education-title editable"
+                                    contenteditable="true"
+                                >
+                                    UI/UX
+                                </h3>
+                                <div
+                                    class="resume__education-tags editable"
+                                    contenteditable="true"
+                                >
+                                    <span>#UX</span><span>#UI</span
+                                    ><span>#research</span
+                                    ><span>#DesignSystem</span><span>#Ui</span
+                                    ><span>#wireframing</span><span>#figma</span
+                                    ><span>#Ux</span>
+                                </div>
+                            </div>
+                            <p
+                                class="resume__education-school editable"
+                                contenteditable="true"
+                            >
+                                Coursera
+                            </p>
+                        </article>
+                        <article class="resume__education-item">
+                            <div class="resume__education-header">
+                                <span
+                                    class="resume__education-year editable"
+                                    contenteditable="true"
+                                    >2017 - 2022</span
+                                >
+                            </div>
+
+                            <div class="resume__education--main">
+                                <h3
+                                    class="resume__education-title editable"
+                                    contenteditable="true"
+                                >
+                                    Law
+                                </h3>
+                                <div
+                                    class="resume__education-tags-green editable"
+                                    contenteditable="true"
+                                >
+                                    <span>#law</span><span>#legalStudies</span
+                                    ><span>#contracts</span
+                                    ><span>#internationalLaws</span>
+                                </div>
+                            </div>
+                            <p
+                                class="resume__education-school editable"
+                                contenteditable="true"
+                            >
+                                University of Kerala
+                            </p>
+                        </article>
+                        <article class="resume__education-item">
+                            <div class="resume__education-header">
+                                <span
+                                    class="resume__education-year editable"
+                                    contenteditable="true"
+                                    >2017</span
+                                >
+                            </div>
+                            <div class="resume__education--main">
+                                <h3
+                                    class="resume__education-title--dark editable"
+                                    contenteditable="true"
+                                >
+                                    Graphic design
+                                </h3>
+                                <div
+                                    class="resume__education-tags-green editable"
+                                    contenteditable="true"
+                                >
+                                    <span>#branding</span><span>#web</span
+                                    ><span>#illustration</span
+                                    ><span>#adobe</span>
+                                </div>
+                            </div>
+                            <p
+                                class="resume__education-school editable"
+                                contenteditable="true"
+                            >
+                                Coursera
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <div class="resume__item--interests-contact">
+                    <section class="resume__interests-card resume__item">
+                        <h2 class="resume__card-title">Interests</h2>
+                        <div
+                            class="resume__interests-tags editable"
+                            contenteditable="true"
+                        >
+                            <span>branding</span><span>design</span
+                            ><span>photography</span
+                            ><span>artificial intelligence</span
+                            ><span>illustration</span><span>typography</span
+                            ><span>social networks</span><span>research</span
+                            ><span>dron pilot</span><span>games</span>
+                        </div>
+                    </section>
+
+                    <section class="resume__contact-card resume__item">
+                        <h2
+                            class="resume__contact-title editable"
+                            contenteditable="true"
+                        >
+                            Let´s chat! I´m ready to work on exciting projects
+                        </h2>
+                        <a
+                            href="mailto:srkarthik.designscape@gmail.com"
+                            class="resume__contact-email editable"
+                            contenteditable="true"
+                            >srkarthik.designscape@gmail.com</a
+                        >
+                    </section>
+                </div>
+            </div>
+        </main>
+        <button id="savePdfBtn">Скачать</button>
+        <script type="module" src="./js/main.js"></script>
+    </body>
 </html>

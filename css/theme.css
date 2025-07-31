@@ -1,0 +1,163 @@
+:root {
+    --bg-primary: #ffffff;
+    --bg-neutral: #f0f0f0;
+    --bg-accent: #28d979;
+    --bg-dark: #000000;
+
+    --text-color-dark: #000000;
+    --text-color-light: #ffffff;
+    --text-color-secondary: #5c5c5c;
+    --text-color-accent: #149063;
+
+    --font-family-main: "Poppins", sans-serif;
+    --border-radius-main: 12px;
+    --border-radius-small: 10px;
+    --border-radius-tag: 59px;
+}
+
+body {
+    font-family: Poppins, Inter, sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-main);
+    color: var(--text-color-dark);
+    background-color: var(--bg-neutral);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.resume {
+    gap: 20px;
+    max-width: 595px;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--bg-primary);
+}
+
+.resume__item {
+    border-radius: var(--border-radius-main);
+    display: flex;
+    flex-direction: column;
+}
+
+.resume__card-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.resume__item--profile-image {
+    width: 124px;
+    height: 124px;
+    overflow: hidden;
+}
+
+.resume__item--profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resume__item--profile-card {
+    width: 124px;
+    height: 124px;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: var(--bg-neutral);
+}
+
+.resume__greeting {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.resume__profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.resume__profile-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.04;
+}
+
+.resume__profile-role {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-color-secondary);
+}
+
+.resume__item--languages-card {
+    max-width: 267px;
+    height: 124px;
+    padding: 12px;
+    background-color: var(--bg-neutral);
+}
+
+.resume__languages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resume__language-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.04;
+}
+
+.resume__language-item span {
+    width: 58px;
+}
+
+.resume__progress-bar-container {
+    width: 168px;
+    height: 11px;
+    overflow: hidden;
+}
+
+.resume__progress-bar {
+    height: 100%;
+    background-color: var(--bg-accent);
+    border-radius: 3px;
+}
+.resume__row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#savePdfBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    padding: 10px 12px;
+    background-color: var(--bg-accent);
+    color: var(--text-color-light);
+    border: none;
+    border-radius: var(--border-radius-main);
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#savePdfBtn:hover {
+    background-color: var(--text-color-accent);
+}
