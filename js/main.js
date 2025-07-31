@@ -1,4 +1,4 @@
-import "../css/style.css";
+// import "../css/style.css";
 
 import { jsPDF } from "jspdf";
 import html2canvas from "html2canvas";
