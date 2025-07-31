@@ -1,4 +1,4 @@
-## Resume Editor
+### Resume Editor
 
 Features:
 
@@ -6,9 +6,9 @@ Features:
 - PDF download button
 - CSS click animations
 - Ripple "Material Wave" effect
-- Responsive design for all device sizes
+- Responsive design (+-)
 
-### Installation and Launch Instructions
+#### Installation and Launch Instructions
 
 1. **Clone the repository:**
 ```bash
@@ -35,3 +35,5 @@ npm run build
 ```bash
 npm run preview
 ```
+
+#### Project link  [GitHub Pages](https://yugld.github.io/resume_editor/)
