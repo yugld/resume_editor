@@ -1,5 +1,4 @@
-// import html2canvas from "html2canvas";
-// import jsPDF from "jspdf";
+import jsPDF from "jspdf";
 
 document.addEventListener("DOMContentLoaded", () => {
     // Лучше переделать по ключу или id
@@ -38,59 +37,18 @@ document.addEventListener("DOMContentLoaded", () => {
         target.appendChild(wave);
         setTimeout(() => wave.remove(), 500);
     }
+    function downloadPDF() {
+        const doc = new jsPDF();
+        const resumeContent = document.getElementById("resume");
+        const text = resumeContent.innerText;
 
-    // // Download PDF
-    // async function downloadPDF() {
-    //     try {
-    //         const pdf = await generatePDF();
-    //         pdf.save("resume.pdf");
-    //     } catch (error) {
-    //         console.error("PDF:", error);
-    //     }
-    // }
+        doc.text(text, 10, 10);
 
-    // async function generatePDF() {
-    //     const resume = document.getElementById("resume");
-    //     const clone = resume.cloneNode(true);
-    //     clone.style.width = "160px"; // добавлено px для явности
-    //     clone.style.position = "fixed";
-    //     clone.style.left = "-9999px";
-    //     clone.style.top = "0";
-    //     document.body.appendChild(clone);
-
-    //     const canvas = await html2canvas(clone, {
-    //         scale: 2,
-    //         width: 160 * 3.78,
-    //         windowWidth: 160 * 3.78,
-    //         scrollX: 0,
-    //         scrollY: 0,
-    //     });
-
-    //     document.body.removeChild(clone);
-
-    //     const pdf = new jsPDF("p", "mm", "a4");
-    //     const imgData = canvas.toDataURL("image/png");
-    //     const imgWidth = pdf.internal.pageSize.getWidth();
-    //     const imgHeight =
-    //         (canvas.height * pdf.internal.pageSize.getWidth()) / canvas.width;
-
-    //     pdf.addImage(
-    //         imgData,
-    //         "PNG",
-    //         0,
-    //         0,
-    //         imgWidth,
-    //         imgHeight,
-    //         undefined,
-    //         "FAST"
-    //     );
-
-    //     return pdf;
-    // }
-
-    // document
-    //     .getElementById("savePdfBtn")
-    //     .addEventListener("click", downloadPDF);
+        doc.save("resume.pdf");
+    }
+    document
+        .getElementById("savePdfBtn")
+        .addEventListener("click", downloadPDF);
 
     function init() {
         document.querySelectorAll("[contenteditable]").forEach((elem) => {

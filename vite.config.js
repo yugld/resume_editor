@@ -7,8 +7,4 @@ export default defineConfig({
         assetsDir: "assets",
         emptyOutDir: true,
     },
-
-    optimizeDeps: {
-        include: ["html2canvas"],
-    },
 });
