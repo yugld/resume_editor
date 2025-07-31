@@ -1,6 +1,6 @@
-import "../css/style.css";
+// import "../css/style.css";
 
-import { jsPDF } from "jspdf";
+import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 
 // лучше переделать по ключу или id
@@ -9,7 +9,7 @@ function restoreContentByClass(elem) {
     const className = elem.className;
     const data = localStorage.getItem("resume_" + className);
     if (data !== null) {
-        elem.innerHtml = data;
+        elem.innerHTML = data;
     }
 }
 
@@ -40,7 +40,6 @@ function createWave(event) {
     setTimeout(() => wave.remove(), 500);
 }
 
-// Download PDF
 async function downloadPDF() {
     try {
         const pdf = await generatePDF();

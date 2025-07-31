@@ -1,4 +1,4 @@
 @import "normalize.css";
 @import "theme.css";
 @import "editable.css";
-@import "./blocks/blocks";
+@import "blocks/blocks.css";
