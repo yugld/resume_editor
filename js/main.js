@@ -1,7 +1,5 @@
-// import "../css/style.css";
-
-import { jsPDF } from "jspdf";
 import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
 
 // лучше переделать по ключу или id
 // ToDo: add save bar content
