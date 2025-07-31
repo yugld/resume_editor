@@ -13,10 +13,6 @@
     background-color: var(--bg-neutral);
 }
 
-.resume__interests-card {
-    flex-grow: 1;
-}
-
 .resume__interests-tags {
     display: flex;
     flex-wrap: wrap;

@@ -31,6 +31,8 @@
         max-width: none;
         width: 100%;
     }
+
+    .resume__item--interests-contact,
     .resume__item--languages-card,
     .resume__item--experience-card {
         max-height: none;

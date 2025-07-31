@@ -44,6 +44,10 @@
     padding: 2px 7px;
     border-radius: var(--border-radius-tag);
     line-height: 155%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
 }
 
 .resume__job-body {
