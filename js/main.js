@@ -1,7 +1,4 @@
-// import "../css/style.css";
-
-import jsPDF from "jspdf";
-import html2canvas from "html2canvas";
+import html2pdf from "html2pdf.js";
 
 // лучше переделать по ключу или id
 // ToDo: add save bar content
@@ -51,35 +48,27 @@ async function downloadPDF() {
 
 async function generatePDF() {
     const resume = document.getElementById("resume");
+    if (!resume) {
+        return;
+    }
+
     const clone = resume.cloneNode(true);
-    clone.style.width = "160";
-    clone.style.position = "fixed";
-    clone.style.left = "-9999px";
-    clone.style.top = "0";
-    document.body.appendChild(clone);
+    //. html2pdf can be configured using an optional opt parameter:
+    const opt = {
+        margin: 0,
+        filename: "resume.pdf",
+        image: { type: "jpeg", quality: 0.98 },
+        html2canvas: {
+            scale: 2,
+            letterRendering: true,
+            scrollX: 0,
+            scrollY: 0,
+        },
+        jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+    };
 
-    const canvas = await html2canvas(clone, {
-        scale: 2,
-        width: 160 * 3.78,
-        windowWidth: 160 * 3.78,
-        scrollX: 0,
-        scrollY: 0,
-    });
-
-    document.body.removeChild(clone);
-
-    const pdf = new jsPDF("p", "mm", "a4");
-    const imgData = canvas.toDataURL("image/png");
-    const imgWidth = pdf.internal.pageSize.getWidth();
-    const imgHeight =
-        (canvas.height * pdf.internal.pageSize.getWidth()) / canvas.width;
-
-    pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight, undefined, "FAST");
-
-    return pdf;
+    html2pdf().from(clone).set(opt).save();
 }
-
-document.getElementById("savePdfBtn").addEventListener("click", downloadPDF);
 
 function init() {
     document.querySelectorAll("[contenteditable]").forEach((elem) => {
@@ -87,6 +76,9 @@ function init() {
         handleInput(elem);
         elem.addEventListener("click", createWave);
     });
+    document
+        .getElementById("savePdfBtn")
+        .addEventListener("click", downloadPDF);
 }
 
-init();
+document.addEventListener("DOMContentLoaded", init);
