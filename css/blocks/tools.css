@@ -51,6 +51,11 @@
     align-items: center;
     gap: 16px;
     max-width: 76px;
+    transition: transform 0.3s ease;
+}
+
+.resume__tool-icons-box:hover {
+    transform: scale(107%);
 }
 
 .resume__tool-icons-box img {
