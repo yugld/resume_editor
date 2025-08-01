@@ -11,15 +11,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "eslint": "^9.32.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-define-config": "^2.1.0",
-    "eslint-plugin-prettier": "^5.5.3",
-    "prettier": "^3.6.2",
-    "vite": "^5.2.0"
+    "eslint": "9.32.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-define-config": "2.1.0",
+    "eslint-plugin-prettier": "5.5.3",
+    "prettier": "3.6.2",
+    "vite": "5.2.0"
   },
   "dependencies": {
-    "html2pdf.js": "^0.9.0",
-
+    "html2pdf.js": "0.9.0"
   }
 }
